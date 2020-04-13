@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FontAwesome cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Inventory - Dashboard</title>
+</head>
+
+<body>
+    <div class="container main">
+        <div class="container table-bordered">
+            <div class="banner">
+                <img src="./img/images.png" alt="alfamart-image">
+            </div>
+
+            <div class="row mb-5 mt-3">
+                <div class="col-md-5">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="cardcollapse navbar-collapse table-bordered" id="navbarSupportedContent"
+                        style="width: 60%;">
+                        <div class="card-header">
+                            Inventory
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="./index.html">Dashboard</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="./edit.html">Add Item</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="./list.html">Show Item</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 mt-4">
+                    <form id="addData">
+                        <div class="form-group">
+                            <label for="#">Product Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Input product name">
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Price Item</label>
+                            <input type="number" class="form-control" id="price" placeholder="Input price item">
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Stock Item (Quantity)</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Input quantity of item">
+                        </div>
+
+                        <div class="form-group ml-1 mt-4">
+                            <a href="./edit.html"><button class="btn btn-primary ml-1" type="button" id="saveInput"><i
+                                        class="fa fa-save fa-2x"></i>Save</button></a>
+                            <a href="./index.html"><button class="btn btn-danger ml-3" type="button"><i
+                                        class="fa fa-undo fa-2x"></i>Reset</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "dataInput": [
+    {
+      "id": 1,
+      "name": "Indomie goreng",
+      "price": "2500",
+      "quantity": "50"
+    },
+    {
+      "id": 2,
+      "name": "Teh botol",
+      "price": "4000",
+      "quantity": "50"
+    },
+    {
+      "name": "sad",
+      "price": "112",
+      "quantity": "1",
+      "id": 3
+    }
+  ]
+}
